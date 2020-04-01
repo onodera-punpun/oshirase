@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/godbus/dbus"
-	"github.com/pocke/oshirase"
+	"github.com/onodera-punpun/oshirase"
 )
 
 var server *oshirase.Server

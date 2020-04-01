@@ -20,7 +20,7 @@ const (
 // action-icons, actions, body, body-hyperlinks, body-images, body-markup, icon-multi, icon-static, persistence, sound
 func (m messages) GetCapabilities() ([]string, *dbus.Error) {
 	// TODO: select return variables
-	return []string{"body", "actions"}, nil
+	return []string{"body", "action-icons", "actions", "body", "body-hyperlinks", "body-images", "body-markup", "icon-multi", "icon-static", "persistence", "sound"}, nil
 }
 
 func (m messages) Notify(appName string, replacesID uint32, appIcon, summary, body string, actions []string, hints map[string]dbus.Variant, expireTimeout int32) (id uint32, err *dbus.Error) {
